@@ -28,11 +28,11 @@ public class StudentServlet extends HttpServlet {
      *
      * @param request servlet request
      * @param response servlet response
-     * @throws ServletException if a servlet-specific error occurs
+     * @throws controller.IllegalNameException
      * @throws IOException if an I/O error occurs
      */
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
-            throws ServletException, IOException {
+            throws ServletException, IOException, ServletException {
         
         String id = request.getParameter("id");
         String name = request.getParameter("name");
